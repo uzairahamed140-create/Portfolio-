@@ -32,8 +32,32 @@ export default function ContactCTA({ onClick }: ContactCTAProps) {
           </div>
 
           <motion.div 
-            className="flex items-center space-x-2 px-5 py-3 bg-gradient-to-r from-[#A855F7] to-[#8B5CF6] text-white rounded-full text-xs font-mono tracking-widest uppercase font-semibold select-none cursor-pointer filter hover:brightness-110 shrink-0 shadow-lg shadow-purple-500/10"
+            className="flex items-center space-x-2 px-5 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-full text-xs font-mono tracking-widest uppercase font-bold select-none cursor-pointer filter border border-emerald-400/40"
+            // Lift, Scale, and Glow stronger on hover
+            whileHover={{ 
+              scale: 1.05, 
+              y: -3,
+              boxShadow: "0 0 25px rgba(16,185,129,0.85)", 
+              borderColor: "rgba(110,231,183,0.7)"
+            }}
             whileTap={{ scale: 0.95 }}
+            // Subtle pulse for important CTA
+            animate={{
+              boxShadow: [
+                "0 0 10px rgba(16,185,129,0.3)",
+                "0 0 22px rgba(16,185,129,0.6)",
+                "0 0 10px rgba(16,185,129,0.3)"
+              ]
+            }}
+            transition={{
+              boxShadow: {
+                duration: 2.2,
+                repeat: Infinity,
+                ease: "easeInOut"
+              },
+              y: { duration: 0.3, ease: "easeOut" },
+              scale: { duration: 0.3, ease: "easeOut" }
+            }}
           >
             <span>Let's Work Together</span>
             <ArrowUpRight className="w-4 h-4 text-white" />
