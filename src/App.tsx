@@ -1091,7 +1091,7 @@ export default function App() {
                     >
                       <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">INSTAGRAM</a>
                       <span className="text-gray-700">|</span>
-                      <a href={`https://wa.me/919008595169?text=${encodeURIComponent('Hi luxy, I wanted to discuss a project')}`} target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 transition-colors">WHATSAPP</a>
+                      <a href={`https://wa.me/918147730010?text=${encodeURIComponent('Hi luxy, I wanted to discuss a project')}`} target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 transition-colors">WHATSAPP</a>
                     </div>
                   </div>
 
